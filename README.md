@@ -3,6 +3,7 @@ When programming on linux/mac, here's some useful tools to improve your producti
 
 
 ------------------------- config vim -------------------------
+
 Vim is my favorite editor on linux/mac. It's powerful and very flexible, but when programming with vim, we still need 
 some features like searching file quickly, showing the code directory tree, etc. 
 
