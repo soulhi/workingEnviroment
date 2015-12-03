@@ -6,7 +6,7 @@ When programming on linux/mac, here's some useful tools to improve your producti
 Vim is my favorite editor on linux/mac. It's powerful and very flexible, but when programming with vim, we still need
 some features like searching file quickly, showing the code directory tree, etc.
 
-#### Here's my vim configuration, after installing it, you'll get the vim plugin:
+#### Features
 * show source code directory tree by plugin NERDTree
 * find file quicking by plugin Ctrlp
 * check python syntax by plugin flake
@@ -14,7 +14,7 @@ some features like searching file quickly, showing the code directory tree, etc.
 * source code tags generation by plugin easytags
 Also, you could put the plugin interested in .vimrc by yourself, then install it.
 
-#### Here's the installtion guide:
+#### Installtion guide:
 1. install vundle:
    * git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
@@ -38,7 +38,7 @@ Also, you could put the plugin interested in .vimrc by yourself, then install it
 * close the startup message when starting screen
 * always show the opened window in message line which is at the bottom of the screen. This is very useful when switching between windows
  
-#### Here's the installtion guide:
+#### Installtion guide:
 config the ~/.screenrc, please backup your ~/.screenrc first!!!
 * git clone https://github.com/soulhi/workingEnviroment.git tmp
 * mv tmp/.screenrc ~/.screenrc
