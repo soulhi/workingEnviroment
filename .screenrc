@@ -1,5 +1,5 @@
 # Bind F11 and F12 (NOT F1 and F2) to previous and next screen window
-# rqb: make bash_profile works
+# make bash_profile works
 shell -$SHELL
 
 bindkey -k F1 prev
