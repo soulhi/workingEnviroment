@@ -42,4 +42,4 @@ config the ~/.screenrc, please backup your ~/.screenrc first!!!
 * git clone https://github.com/soulhi/workingEnviroment.git tmp
 * mv tmp/.screenrc ~/.screenrc
 
-[comment]: <> (Markdown editor: https://jbt.github.io/markdown-editor/)
+<!-- Markdown editor: https://jbt.github.io/markdown-editor -->
