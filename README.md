@@ -32,7 +32,6 @@ Also, you could put the plugin interested in .vimrc by yourself, then install it
 
 5. enjoy your vim
 
-
 ## screen config
 #### Features:
 * close the startup message when starting screen
@@ -42,3 +41,5 @@ Also, you could put the plugin interested in .vimrc by yourself, then install it
 config the ~/.screenrc, please backup your ~/.screenrc first!!!
 * git clone https://github.com/soulhi/workingEnviroment.git tmp
 * mv tmp/.screenrc ~/.screenrc
+
+[comment]: <> (Markdown editor: https://jbt.github.io/markdown-editor/)
