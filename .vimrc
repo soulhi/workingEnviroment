@@ -218,6 +218,9 @@ let Tlist_File_Fold_Auto_Close = 0
 " 不要显示折叠树 
 let Tlist_Enable_Fold_Column = 0 
 
+"open taglist when editing and saving source code
+autocmd FileType java,c,cpp,python :TlistToggle
+autocmd BufWritePost *.java,*.c,*.cpp,*.py,*.h,*.hpp :TlistUpdate
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " Autocommands 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
