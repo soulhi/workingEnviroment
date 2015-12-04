@@ -30,6 +30,7 @@ Plugin 'https://github.com/xolox/vim-misc.git'
 Plugin 'https://github.com/xolox/vim-easytags.git'
 "Plugin 'file:///home/ruanqb/.vim/bundle/minibufexpl' "buffer list 
 Plugin 'fholgado/minibufexpl.vim' "buffer list
+Plugin 'Chiel92/vim-autoformat' "source code auto formating
 
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 " All of your Plugins must be added before the following line
@@ -196,6 +197,13 @@ set nowrap
 
 " 在行和段开始处使用制表符 
 set smarttab 
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
+"plugin vim-autoformat 设定
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
+" try to format source code when saving
+autocmd BufWrite * :Autoformat
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " CTags的设定 
