@@ -203,7 +203,7 @@ set smarttab
 "plugin vim-autoformat 设定
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " try to format source code when saving
-autocmd BufWrite * :Autoformat
+" autocmd BufWrite * :Autoformat
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " CTags的设定 
@@ -235,17 +235,17 @@ autocmd BufWritePost *.java,*.c,*.cpp,*.py,*.h,*.hpp :TlistUpdate
 " 只在下列文件类型被侦测到的时候显示行号，普通文本文件不显示 
 
 if has("autocmd") 
-autocmd FileType xml,html,c,cs,java,perl,shell,bash,cpp,python,vim,php,ruby set number 
-autocmd FileType xml,html vmap <C-o> <ESC>'<i<!--<ESC>o<ESC>'>o--> 
-autocmd FileType java,c,cpp,cs vmap <C-o> <ESC>'<o 
-autocmd FileType html,text,php,vim,c,java,xml,bash,shell,perl,python setlocal textwidth=100 
-"Do not check html code
-"autocmd Filetype html,xml,xsl source $VIMRUNTIME/plugin/closetag.vim 
-autocmd Filetype xml,xsl source $VIMRUNTIME/plugin/closetag.vim 
-autocmd BufReadPost * 
-\ if line("'\"") > 0 && line("'\"") <= line("$") | 
-\ exe " normal g`\"" | 
-\ endif 
+    autocmd FileType xml,html,c,cs,java,perl,shell,bash,cpp,python,vim,php,ruby set number 
+    autocmd FileType xml,html vmap <C-o> <ESC>'<i<!--<ESC>o<ESC>'>o--> 
+    autocmd FileType java,c,cpp,cs vmap <C-o> <ESC>'<o 
+    autocmd FileType html,text,php,vim,c,java,xml,bash,shell,perl,python setlocal textwidth=100 
+    "Do not check html code
+    "autocmd Filetype html,xml,xsl source $VIMRUNTIME/plugin/closetag.vim 
+    autocmd Filetype xml,xsl source $VIMRUNTIME/plugin/closetag.vim 
+    autocmd BufReadPost * 
+                \ if line("'\"") > 0 && line("'\"") <= line("$") | 
+                \ exe " normal g`\"" | 
+                \ endif 
 endif "has("autocmd") 
 
 " F5编译和运行C程序，F6编译和运行C++程序 
@@ -255,28 +255,28 @@ endif "has("autocmd")
 " C的编译和运行 
 map <F5> :call CompileRunGcc()<CR> 
 func! CompileRunGcc() 
-exec "w" 
-exec "!gcc % -o %<" 
-exec "! ./%<" 
+    exec "w" 
+    exec "!gcc % -o %<" 
+    exec "! ./%<" 
 endfunc 
 
 " C++的编译和运行 
 map <F6> :call CompileRunGpp()<CR> 
 func! CompileRunGpp() 
-exec "w" 
-exec "!g++ % -o %<" 
-exec "! ./%<" 
+    exec "w" 
+    exec "!g++ % -o %<" 
+    exec "! ./%<" 
 endfunc 
 
 " 能够漂亮地显示.NFO文件 
 set encoding=utf-8 
 function! SetFileEncodings(encodings) 
-let b:myfileencodingsbak=&fileencodings 
-let &fileencodings=a:encodings 
+    let b:myfileencodingsbak=&fileencodings 
+    let &fileencodings=a:encodings 
 endfunction 
 function! RestoreFileEncodings() 
-let &fileencodings=b:myfileencodingsbak 
-unlet b:myfileencodingsbak 
+    let &fileencodings=b:myfileencodingsbak 
+    unlet b:myfileencodingsbak 
 endfunction 
 
 au BufReadPre *.nfo call SetFileEncodings('cp437')|set ambiwidth=single au BufReadPost *.nfo call RestoreFileEncodings() 
