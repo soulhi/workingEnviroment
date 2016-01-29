@@ -218,7 +218,7 @@ let Tlist_Use_Right_Window = 1
 let Tlist_Compart_Format = 1 
 
 " 如果只有一个buffer，kill窗口也kill掉buffer 
-let Tlist_Exist_OnlyWindow = 1 
+let Tlist_Exit_OnlyWindow = 1 
 
 " 不要关闭其他文件的tags 
 let Tlist_File_Fold_Auto_Close = 0 
